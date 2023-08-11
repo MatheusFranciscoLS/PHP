@@ -3,7 +3,7 @@
 	$nome = "Matheus";
 	$idade = 23;
 
-	echo "Eu sou " . $nome . " e tenho" . $idade . " anos. <br><br>";
+	echo "Eu sou " . $nome . " e tenho " . $idade . " anos. <br><br>";
 
 	$str1 = strtoupper("Programação em php");
 	echo "$str1 <br>";
