@@ -18,3 +18,5 @@
 	$str3 = str_replace("i", "1", "$str3");
 
 	echo "$str3 <br>";
+
+?>
