@@ -26,4 +26,81 @@ if (is_int($numero)) {
 }
 
 echo "<hr>";
+
+//ponto flutuante
+$real = 2.75;
+var_dump($real);
+
+echo "<br>";
+
+if (is_float($real)) {
+    echo "É uma variável Float";
+} else {
+    echo "Não é uma variável Float";
+}
+
+echo "<hr>";
+
+//booleano
+$bool = true;
+var_dump($bool);
+
+echo "<br>";
+
+if (is_bool($bool)) {
+    echo "É uma variável Boolean";
+} else {
+    echo "Não é uma variável Boolean";
+}
+
+echo "<hr>";
+
+//array
+$frutas = array("Melância", "Uva", "Morango", 2, 10.5, 7);
+var_dump($frutas);
+
+echo "<br>";
+
+if (is_array($frutas)) {
+    echo "É uma variável Array";
+} else {
+    echo "Não é uma variável Array";
+}
+
+echo "<hr>";
+
+//objeto
+class Alunos{
+    public $nome;
+    public function nomeAluno($nome){
+        $this->$nome = $nome;
+    }
+}
+$aluno = new Alunos();
+$aluno->nomeAluno("Matheus");
+var_dump($aluno);
+
+echo "<br>";
+
+if (is_object($aluno)) {
+    echo "É uma variável Objeto";
+} else {
+    echo "Não é uma variável Objeto";
+}
+
+echo "<hr>";
+
+//null
+$saldo = null;
+var_dump($saldo);
+
+echo "<br>";
+
+if (is_null($saldo)) {
+    echo "É uma variável Nula";
+} else {
+    echo "Não é uma variável Nula";
+}
+
+echo "<hr>";
 ?>
