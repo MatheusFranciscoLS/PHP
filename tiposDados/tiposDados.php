@@ -70,9 +70,11 @@ if (is_array($frutas)) {
 echo "<hr>";
 
 //objeto
-class Alunos{
+class Alunos
+{
     public $nome;
-    public function nomeAluno($nome){
+    public function nomeAluno($nome)
+    {
         $this->$nome = $nome;
     }
 }
@@ -100,6 +102,42 @@ if (is_null($saldo)) {
     echo "É uma variável Nula";
 } else {
     echo "Não é uma variável Nula";
+}
+
+echo "<hr>";
+
+//comando if
+
+$a = 10;
+$b = 50;
+
+if ($a > $b) {
+    echo "a é maior que b";
+} elseif ($a == $b) {
+    echo "a é igual a b";
+} else {
+    echo "a é menor que b";
+}
+
+echo "<hr>";
+
+//Comando switch
+
+$i = 3;
+
+switch ($i) {
+    case 0:
+        echo "i é igual a 0";
+        break;
+    case 1:
+        echo "i é igual a 1";
+        break;
+    case 2:
+        echo "i é igual a 2";
+        break;
+    default:
+        echo "i não é igual a 0,1 ou 2";
+        break;
 }
 
 echo "<hr>";
