@@ -1,6 +1,6 @@
 <?php
 
-//string
+//string.
 $str = "Olá Mundo em php.";
 var_dump($str);
 
