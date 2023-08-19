@@ -31,4 +31,3 @@ echo "<hr>";
 echo multiplica(10, 5);
 echo "<hr>";
 echo divisao(10, 5);
-?>
