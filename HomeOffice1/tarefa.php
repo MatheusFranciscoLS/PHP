@@ -20,8 +20,12 @@ function multiplica($a, $b)
 
 function divisao($a, $b)
 {
-    $retorno = ($a / $b);
-    return $retorno;
+    if ($a == 0 || $b == 0) {
+        echo "Não pode ser feito divisão por 0";
+    }else {
+        $retorno = ($a / $b);
+        return $retorno;
+    }
 }
 
 echo adicao(10, 5);
@@ -30,4 +34,4 @@ echo subtracao(10, 5);
 echo "<hr>";
 echo multiplica(10, 5);
 echo "<hr>";
-echo divisao(10, 5);
+echo divisao(10, 2);
