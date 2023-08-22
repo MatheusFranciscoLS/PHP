@@ -19,6 +19,5 @@ function nPrimo($numero) {
         echo "O número $numero não é primo e tem $cont divisores";
     }
 }
-
 nPrimo(19);
 

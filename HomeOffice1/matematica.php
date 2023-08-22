@@ -31,4 +31,5 @@ function quadrado2($b){
 function potencia($a,$b){
     return $a ** $b;
 }
+
 ?>

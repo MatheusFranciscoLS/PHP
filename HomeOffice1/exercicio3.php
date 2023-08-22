@@ -1,7 +1,6 @@
 <?php
 
-function par($array)
-{
+function par($array){
     foreach ($array as $numero) {
         if ($numero % 2 == 0) {
             echo $numero . " é par <br>";
