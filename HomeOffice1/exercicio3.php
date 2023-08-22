@@ -8,7 +8,6 @@ function par($array)
         } else {
             echo $numero . " não é par <br>";
         }
-
     }
 }
 
