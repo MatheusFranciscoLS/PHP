@@ -4,7 +4,7 @@
 $host = 'localhost';
 $usuario = 'root';
 $senha = '';
-$banco = 'clientes';
+$banco = 'formteste';
 
 //Cria uma conexão com o banco de dados
 $conexao = mysqli_connect($host, $usuario, $senha, $banco);
@@ -19,7 +19,7 @@ if ($conexao) {
     $endereco = $_POST['endereco'];
 
     //Insere os dados na tabela do banco
-    $sql = "INSERT INTO clientes (nome, email, data_nascimento, endereco) VALUES ('$nome','$email','$data_nascimento','$endereco')";
+    $sql = "INSERT INTO aluno (nome, email, data_nascimento, endereco) VALUES ('$nome','$email','$data_nascimento','$endereco')";
     mysqli_query($conexao, $sql);
 
     //Verifica se a inserção foi bem-sucedida
