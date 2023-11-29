@@ -4,25 +4,29 @@ class Veículo{
     private $marca;
     private $modelo;
 
-    public function Ligar(){
+    public function Ligar()
+    {
         echo "Ligando...";
     }
 
-    public function Desligar(){
+    public function Desligar()
+    {
         echo "Desligando...";
     }
 }
 
 class Carro extends Veículo{
     private $numPortas;
-    public function Acelerar(){
+    public function Acelerar()
+    {
         echo "Acelerando...";
     }
 }
 
 class Moto extends Veículo{
     private $numPortas;
-    public function Acelerar(){
+    public function Acelerar()
+    {
         echo "Acelerando a moto";
     }
 }
