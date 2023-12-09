@@ -1,26 +1,30 @@
 <?php
-session_start();
 include 'db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $usuario = $_POST["usuario"];
-    $senha = $_POST["senha"];
+    // Verificação de login
+    $loginUsuario = $_POST["loginUsuario"];
+    $loginSenha = $_POST["loginSenha"];
 
-    $stmt = $conn->prepare("SELECT id, usuario, senha FROM usuarios WHERE usuario = ?");
-    $stmt->bind_param("s", $usuario);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $row = $result->fetch_assoc();
+    $stmtLogin = $conn->prepare("SELECT usuario, senha FROM usuarios WHERE usuario = ?");
+    $stmtLogin->bind_param("s", $loginUsuario);
+    $stmtLogin->execute();
+    $stmtLogin->bind_result($dbUsuario, $dbSenha);
 
-    if ($row && password_verify($senha, $row["senha"])) {
-        $_SESSION["usuario"] = $row["usuario"];
-        header("Location: dashboard.php"); // Redireciona para a página do painel após o login
-        exit();
+    if ($stmtLogin->fetch()) {
+        // Usuário encontrado, verifique a senha
+        if (password_verify($loginSenha, $dbSenha)) {
+            echo '<script>alert("Login bem-sucedido!");</script>';
+        } else {
+            echo '<script>alert("Senha incorreta. Tente novamente.");</script>';
+        }
     } else {
-        echo "Usuário ou senha incorretos.";
+        echo '<script>alert("Usuário não encontrado. Verifique suas credenciais.");</script>';
     }
 
-    $stmt->close();
+    $stmtLogin->close();
+} else {
+    echo '<script>alert("Método de requisição inválido.");</script>';
 }
 
 $conn->close();

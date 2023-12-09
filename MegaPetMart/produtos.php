@@ -158,17 +158,13 @@
                 </div>
 
                 <h2>Preço</h2>
-                <div class="preco">
-                    <p>R$0</p>
-                    <p>R$10.000</p>
-                </div>
 
                 <input id="myRange" class="slider" name="rangeValor" value="0" max="1000" min="0" type="range">
 
                 <div class="mudarPreco">
                     <p id="precoProd">R$0</p>
+                <button type="submit" class="btn btn-success" id="aplicar">Aplicar</button>
                 </div>
-                <button type="submit" class="btn btn-link" id="aplicar">Aplicar</button>
             </div>
         </form>
 
@@ -285,5 +281,5 @@
         </div>
     </footer>
 </body>
-
+<script src="script.js"></script>
 </html>

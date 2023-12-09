@@ -171,11 +171,6 @@
 
 }
 
-.cardImagem{
-    width: 1vh;
-    height: 1vh;
-}
-
 .cardProdutos {
     margin-top: 2vh;
     width: 100%;
@@ -189,7 +184,6 @@
     font-size: 2vh;
     background-color: #000;
     color: aliceblue;
-    width: 30%;
 }
 
 .cardProdutos .quant {

@@ -37,18 +37,11 @@ if (
 
         try {
 
-
-        
-
-
-
             $query = "INSERT INTO produto ( prod_img, id, nome, tipo,categoria, marca, descricao, valor, qtd) VALUES ('$imagem/1.$extensao1', '$id', '$nome', '$tipo','$categoria', '$marca', '$descricao', '$valor',  '$qtd')";
 
             mysqli_query($conn, $query);
 
-
             header("location:cadastroproduto.php?msgSucesso=Cadastro realizado com sucesso!");
-
 
         } catch (Exception $e) {
             header("Location: cadastroproduto.php?msgErro=Falha ao cadastrar...");
@@ -56,14 +49,7 @@ if (
 
     } elseif ($_POST['enviarDados'] == 'alt') {
 
-
-      
-
         $query = "UPDATE produto SET  prod_img='$imagem/1.$extensao1', nome='$nome', tipo='$tipo', categoria='$categoria', marca='$marca', descricao='$descricao', valor='$valor', qtd='$qtd' WHERE id = $id";
-
-
-
-
 
 if (mysqli_query($conn, $query)) {
     header("location:cadastroproduto.php?msgSucesso=Dados alterados com sucesso!");

@@ -71,19 +71,19 @@
     }
     ?>
 
-    <form action="" method="post" enctype="multipart/form-data">
 
+    <form action="" method="post" enctype="multipart/form-data">
 
         <!-- Seção dos botões de filtro -->
 
-        <input type="radio" name="filtro" value="id"> <label>Código do Produto</label>
-        <input type="radio" name="filtro" value="nome"> <label>Nome</label>
-        <input type="radio" name="filtro" value="tipo"> <label>Tipo </label>
-        <input type="radio" name="filtro" value="categoria"> <label>Categoria</label>
-        <input type="radio" name="filtro" value="descricao"> <label>Descrição</label>
-        <input type="radio" name="filtro" value="marca"><label>Marca</label>
-        <input type="radio" name="filtro" value="valor"><label>Valor</label>
-        <input type="radio" name="filtro" value="qtd"><label>Quantidade</label>
+        <label>Código do Produto</label> <input type="radio" name="filtro" value="id">
+        <label>Nome</label> <input type="radio" name="filtro" value="nome">
+        <label>Tipo </label> <input type="radio" name="filtro" value="tipo">
+        <label>Categoria</label> <input type="radio" name="filtro" value="categoria">
+        <label>Descrição</label> <input type="radio" name="filtro" value="descricao">
+        <label>Marca</label> <input type="radio" name="filtro" value="marca">
+        <label>Valor</label> <input type="radio" name="filtro" value="valor">
+        <label>Quantidade</label> <input type="radio" name="filtro" value="qtd">
         <input type="text" name="pesquisaProd" placeholder="Pesquisa">
         <button type="submit">Pesquisar</button>
     </form>
@@ -169,5 +169,6 @@
     </div>
 
 </body>
+<script src="script.js"></script>
 
 </html>
