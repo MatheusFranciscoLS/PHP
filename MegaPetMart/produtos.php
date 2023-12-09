@@ -238,6 +238,7 @@
                         <?php $j = $i ?>
 
                     <?php } ?>
+                    <button class="adCadastro"><a href="cadastroproduto.php">Adicionar Produto</a></button>
                 </div>
             </section>
         </form>
