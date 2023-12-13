@@ -57,7 +57,7 @@ if ($_POST['enviarDados'] == 'cad') { // CADASTRAR!!!
             header("Location: cadastroproduto.php?msgErro=Falha ao cadastrar...");
         }
     } else {
-        header("Location: cadastroproduto.php?msgErro=Falha ao cadastrar anúncio...");
+        header("Location: cadastroproduto.php?msgErro=Falha...");
 
 
     }

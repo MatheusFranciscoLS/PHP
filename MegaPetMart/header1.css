@@ -169,3 +169,51 @@ html, body {
     text-decoration: none;
     color: black;
 }
+
+/* Responsividade geral */
+@media only screen and (max-width: 768px) {
+  .foto1 {
+      height: 4rem; /* Ou qualquer valor desejado para dispositivos móveis */
+  }
+
+  .inputBox_container {
+      max-width: 10em;
+  }
+
+  .search_icon {
+      padding: 0 0.3em 0 0.5em;
+  }
+
+  .inputBox {
+      font-size: 0.8em;
+  }
+
+  .btn-cart {
+      width: 40px;
+      height: 40px;
+  }
+
+  .icon-cart {
+      width: 20.38px;
+      height: 26.52px;
+  }
+
+  .icon-cart path {
+      fill: black;
+  }
+
+  .quantity {
+      font-size: 12px;
+      display: inline-block;
+  }
+
+  .navBar {
+      font-size: 18px;
+  }
+
+  .entrar_cadastro {
+      font-size: 14px;
+      padding: 8px;
+      width: 100px;
+  }
+}

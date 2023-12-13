@@ -80,3 +80,31 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/* Responsividade geral */
+@media only screen and (max-width: 768px) {
+    .carousel,
+    .imagem1,
+    .imagem2,
+    .imagem3,
+    .imagem4 {
+        height: 200px; /* Ou qualquer valor desejado para dispositivos móveis */
+    }
+
+    .navBar {
+        font-size: 18px;
+    }
+
+    .destaque h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card-title,
+    .card-text {
+        text-align: center;
+    }
+}

@@ -265,3 +265,85 @@ label:last-child span {
     color: green;
     background-color: #2A8A5C;
 }
+
+/* Responsividade para o banner e filtro */
+@media only screen and (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner h1 {
+        font-size: 6vh;
+        margin-bottom: 2vh;
+    }
+
+    .filtro {
+        margin-bottom: 2vh;
+    }
+
+    .filtro input,
+    .filtro h1,
+    .filtro h2,
+    .filtro p {
+        margin: 2vh 0;
+    }
+
+    .preco,
+    .filtro .mudarPreco,
+    .filtro .slider {
+        flex-direction: column;
+    }
+
+    .filtro .slider {
+        width: 100%;
+        margin-top: 2vh;
+    }
+
+    .filtro button {
+        height: 8vh;
+    }
+
+    .filtro button p {
+        font-size: 4vh;
+    }
+
+    .label {
+        padding: 1vh 1.5vh;
+        margin: 1vh 0;
+    }
+
+    .radio-input,
+    .radio-design,
+    .label-text {
+        font-size: 3vh;
+    }
+
+    .cardProdutos {
+        height: auto;
+    }
+
+    .cardProdutos button,
+    .cardProdutos .quant {
+        font-size: 3vh;
+    }
+
+    .imagembd {
+        width: 100%;
+        height: auto;
+    }
+
+    .mydict {
+        margin-left: 0;
+    }
+
+    .mydict button {
+        margin: 0 1vh;
+    }
+}
+
+/* Remova o outline nos demais elementos, exceto para o input:focus */
+*:not(input):focus {
+    outline: none;
+}
+    

@@ -9,7 +9,8 @@ CREATE TABLE usuarios (
     estado VARCHAR(2),
     cep VARCHAR(8) NOT NULL,
     cpf VARCHAR(11) NOT NULL,
-    nCartao VARCHAR(16) NOT NULL
+    nCartao VARCHAR(16) NOT NULL,
+    tipo varchar(16) NOT NULL
 );
 
 CREATE TABLE produto(
@@ -21,4 +22,14 @@ CREATE TABLE produto(
     descricao varchar(100),
     valor int(10),
     prod_img longblob,
+     qtd int(10));
+
+      create table pedidos(
+     id int(10) not null,
+     data varchar(50),
+     valor decimal(50,2),
+     endereco varchar(150),
+     numPedido int(10),
+     descricao varchar(250),
+     img varchar(200),
      qtd int(10));

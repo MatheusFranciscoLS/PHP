@@ -43,8 +43,8 @@
         <label>Imagem:</label><input type="file" name="imagem" />
         <label>Quantidade</label><input type="number" name="qtd" value="<?php echo $row->qtd; ?>"><br>
 
-
+        <div class="botao">
         <button type="submit" name="enviarDados" class="btn btn-primary" value="del">Excluir</button>
-        <a href="cadastroproduto" class="btn btn-danger">Cancelar</a>
-
+        <a href="cadastroproduto"><button class="btn btn-danger">Cancelar</button></a>
+        </div>
     </form>

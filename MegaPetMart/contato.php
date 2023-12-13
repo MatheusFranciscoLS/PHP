@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="contato.css">
@@ -18,7 +17,7 @@
 
     <header>
         <div class="cima">
-            <a href="index.html"><img class="foto1" src="images/MegaPet Mart.png" alt=""> </a>
+            <a href="index.php"><img class="foto1" src="images/MegaPet Mart.png" alt=""> </a>
             <div id="divBusca">
                 <div class="inputBox_container">
                     <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" alt="search icon">
@@ -30,11 +29,11 @@
                 </div>
             </div>
             <div class="pedidos">
-                <a href="pedidos.html"><img src="images/dropbox.png" alt=""></a>
-                <a href="pedidos.html">Meus Pedidos</a>
+                <a href="pedidos.php"><img src="images/dropbox.png" alt=""></a>
+                <a href="pedidos.php">Meus Pedidos</a>
             </div>
             <div class="carrinho">
-                <a href="carrinho.html">
+                <a href="">
                     <button data-quantity="0" class="btn-cart">
                         <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38"
                             xmlns="http://www.w3.org/2000/svg">
@@ -48,13 +47,29 @@
                 </a>
             </div>
             <div class="login">
-                <a href="login.html"><button class="entrar_cadastro">
-                        <span>Entrar</span>
-                    </button></a>
-                <a href="cadastro.html"><button class="entrar_cadastro">
-                        <span>Cadastrar</span>
-                    </button></a>
-            </div>
+                <?php
+        
+                session_start();
+                // Verificar se $_SESSION['usuario'] está definida
+                if (isset($_SESSION['usuario'])) {
+                  // Mostrar o nome do usuário
+                  echo '<div class="usuarioLogado">';
+                  echo 'Bem-vindo, ' . $_SESSION['usuario'];
+                  echo '</div>';
+                  echo '<a href="logout.php" class="btn btn-dark">Sair</a>';
+                } else {
+                  // Se não estiver logado, mostrar botões de login e cadastro
+                  echo '<div class="login">';
+                  echo '<a href="login.php"><button class="entrar_cadastro">';
+                  echo '<span>Entrar</span>';
+                  echo '</button></a>';
+                  echo '<a href="cadastro.php"><button class="entrar_cadastro">';
+                  echo '<span>Cadastrar</span>';
+                  echo '</button></a>';
+                  echo '</div>';
+                }
+                ?>
+              </div>
         </div>
     </header>
 

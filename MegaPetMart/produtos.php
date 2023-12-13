@@ -11,17 +11,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:ital,wght@1,600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <title>Produtos</title>
 </head>
 
 <body class="body-no-margin">
     <header>
         <div class="cima">
-            <a href="index.html"><img class="foto1" src="images/MegaPet Mart.png" alt=""> </a>
+            <a href="index.php"><img class="foto1" src="images/MegaPet Mart.png" alt=""> </a>
             <div id="divBusca">
                 <div class="inputBox_container">
                     <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" alt="search icon">
@@ -33,11 +33,11 @@
                 </div>
             </div>
             <div class="pedidos">
-                <a href="pedidos.html"><img src="images/dropbox.png" alt=""></a>
-                <a href="pedidos.html">Meus Pedidos</a>
+                <a href="pedidos.php"><img src="images/dropbox.png" alt=""></a>
+                <a href="pedidos.php">Meus Pedidos</a>
             </div>
             <div class="carrinho">
-                <a href="carrinho.html">
+                <a href="">
                     <button data-quantity="0" class="btn-cart">
                         <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38"
                             xmlns="http://www.w3.org/2000/svg">
@@ -51,19 +51,19 @@
                 </a>
             </div>
             <div class="login">
-                <a href="login.html"><button class="entrar_cadastro">
+                <a href="login.php"><button class="entrar_cadastro">
                         <span>Entrar</span>
                     </button></a>
-                <a href="cadastro.html"><button class="entrar_cadastro">
+                <a href="cadastro.php"><button class="entrar_cadastro">
                         <span>Cadastrar</span>
                     </button></a>
             </div>
         </div>
     </header>
     <div class="navBar">
-        <a href="quemsomos.html">Quem Somos</a>
+        <a href="quemsomos.php">Quem Somos</a>
         <a href="produtos.php">Produtos</a>
-        <a href="contato.html">Contato</a>
+        <a href="contato.php">Contato</a>
     </div>
     <section class="prod">
 
@@ -238,7 +238,7 @@
                         <?php $j = $i ?>
 
                     <?php } ?>
-                    <button class="adCadastro"><a href="cadastroproduto.php">Adicionar Produto</a></button>
+                  
                 </div>
             </section>
         </form>
@@ -272,15 +272,18 @@
                 <a href="">Política de white hat</a>
             </div>
             <div class="politica3">
-                <h1>Institucional</h1>
-                <a href="">Sustentabilidade</a><br>
-                <a href="">Empresa</a><br>
-                <a href="">Termos e condições de uso</a><br>
-                <a href="">Canal de ética e conduta</a><br>
-                <a href="">Trabalhe conosco</a>
-            </div>
+        <h4>Encontre uma loja</h4>
+        <div class="mapa">
+          <!-- Elemento onde o mapa será exibido -->
+          <div id="mapa"></div>
+          <!-- Inclusão da biblioteca Leaflet -->
+          <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        </div>
+      </div>
         </div>
     </footer>
 </body>
+<script src="mapaLoja.js"></script>
 <script src="script.js"></script>
+
 </html>

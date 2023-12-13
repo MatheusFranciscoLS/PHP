@@ -22,3 +22,7 @@ body {
 #btnCadastro:hover {
     background-color: #15b065;
 }
+
+.cliente{
+    margin-left: 500px;
+}
