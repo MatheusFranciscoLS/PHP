@@ -1,5 +1,9 @@
 .btn{
-    margin-left: 600px;
+    margin-left: 50%;
+}
+
+#pesquisa{
+    margin-left: 200px;
 }
 
 form {
@@ -93,6 +97,7 @@ form {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 40%;
     }
 
     /* Responsividade geral */

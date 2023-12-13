@@ -56,7 +56,7 @@
           echo '<div class="usuarioLogado">';
           echo 'Bem-vindo, ' . $_SESSION['usuario'];
           echo '</div>';
-          echo '<a href="logout.php" class="btn btn-dark">Sair</a>';
+          echo '<a href="logout.php" class="btn btn-dark" id="logout">Sair</a>';
         } else {
           // Se não estiver logado, mostrar botões de login e cadastro
           echo '<div class="login">';

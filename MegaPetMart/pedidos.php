@@ -7,14 +7,14 @@
   <title>Meus Pedidos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="stylesheet" href="pedidos.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="pedidos.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
 
-<body>
-  <header>
+<body class="body-no-margin">
+<header>
     <div class="cima">
       <a href="index.php"><img class="foto1" src="images/MegaPet Mart.png" alt=""> </a>
       <div id="divBusca">
@@ -55,7 +55,7 @@
           echo '<div class="usuarioLogado">';
           echo 'Bem-vindo, ' . $_SESSION['usuario'];
           echo '</div>';
-          echo '<a href="logout.php" class="btn btn-dark">Sair</a>';
+          echo '<a href="logout.php" class="btn btn-dark" id="logout">Sair</a>';
         } else {
           // Se não estiver logado, mostrar botões de login e cadastro
           echo '<div class="login">';

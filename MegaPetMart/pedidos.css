@@ -42,6 +42,11 @@ section {
     margin-top: 10px;
 }
 
+.footer {
+    position: fixed;
+    margin-top: -23vh;
+    background: #2A8A5C;
+}
 
 
 /* Responsividade */

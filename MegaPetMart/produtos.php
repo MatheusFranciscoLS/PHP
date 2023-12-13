@@ -51,13 +51,29 @@
                 </a>
             </div>
             <div class="login">
-                <a href="login.php"><button class="entrar_cadastro">
-                        <span>Entrar</span>
-                    </button></a>
-                <a href="cadastro.php"><button class="entrar_cadastro">
-                        <span>Cadastrar</span>
-                    </button></a>
-            </div>
+        <?php
+
+        session_start();
+        // Verificar se $_SESSION['usuario'] está definida
+        if (isset($_SESSION['usuario'])) {
+          // Mostrar o nome do usuário
+          echo '<div class="usuarioLogado">';
+          echo 'Bem-vindo, ' . $_SESSION['usuario'];
+          echo '</div>';
+          echo '<a href="logout.php" class="btn btn-dark" id="logout">Sair</a>';
+        } else {
+          // Se não estiver logado, mostrar botões de login e cadastro
+          echo '<div class="login">';
+          echo '<a href="login.php"><button class="entrar_cadastro">';
+          echo '<span>Entrar</span>';
+          echo '</button></a>';
+          echo '<a href="cadastro.php"><button class="entrar_cadastro">';
+          echo '<span>Cadastrar</span>';
+          echo '</button></a>';
+          echo '</div>';
+        }
+        ?>
+      </div>
         </div>
     </header>
     <div class="navBar">

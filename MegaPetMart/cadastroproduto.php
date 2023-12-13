@@ -25,7 +25,7 @@ die();
 
     <h2>Cadastrado de Produtos</h2>
 <br>
-    <a href="logout.php" class="btn btn-dark">Sair</a>
+    <a href="logout.php" class="btn btn-dark" id="logout">Sair</a>
     <div class="container">
         <br>
 

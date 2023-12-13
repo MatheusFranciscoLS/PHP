@@ -57,8 +57,10 @@
         <label>Quantidade</label><input type="number" name="qtd" value="<?php echo $row->qtd; ?>"><br>
 
         <!-- Botões para enviar dados e cancelar a operação -->
-        <button type="submit" name="enviarDados" class="btn btn-primary" value="alt">Salvar Alterações</button>
+        <div class="botao">
+        <button type="submit" name="enviarDados" class="btn btn-primary" value="alt">Salvar</button>
         <a href="cadastroproduto"><button class="btn btn-danger">Cancelar</button></a>
+        </div>
     </form>
 </body>
 
