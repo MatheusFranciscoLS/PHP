@@ -58,7 +58,7 @@
 
         <!-- Botões para enviar dados e cancelar a operação -->
         <div class="botao">
-        <button type="submit" name="enviarDados" class="btn btn-primary" value="alt">Salvar</button>
+        <button type="submit" name="enviarDados" class="btn btn-success" value="alt">Salvar</button>
         <a href="cadastroproduto"><button class="btn btn-danger">Cancelar</button></a>
         </div>
     </form>

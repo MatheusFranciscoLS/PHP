@@ -3,7 +3,7 @@ body {
 }
 
 .needs-validation1 h1{
-    margin-left: 12vh;
+    margin-left: 7rem;
 }
 
 .needs-validation1 {
@@ -47,14 +47,16 @@ body {
 }
 
 .footer {
-    position: fixed;
-    margin-top: -23vh;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 100%;
     background: #2A8A5C;
 }
 
 
 #btnLogin {
-    margin-left: 12vh;
+    margin-left: 9rem;
     border-color: black;
     background-color: #2A8A5C;
 }

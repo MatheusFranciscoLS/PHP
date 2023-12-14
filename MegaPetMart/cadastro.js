@@ -43,6 +43,7 @@ function Senha() {
     }
 }
 
+
 // Função para exibir aviso de termos quando o botão é clicado
 function marcarTermos() {
     document.getElementById("termosButton").onclick = function () {

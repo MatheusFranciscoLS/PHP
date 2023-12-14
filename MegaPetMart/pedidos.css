@@ -42,11 +42,6 @@ section {
     margin-top: 10px;
 }
 
-.footer {
-    position: fixed;
-    margin-top: -23vh;
-    background: #2A8A5C;
-}
 
 
 /* Responsividade */
@@ -267,6 +262,66 @@ section {
     .fundoItens {
         background: transparent;
         margin-left: 7.5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 1850px)  {
+
+    .fundoItens {
+        background: transparent;
+        margin-left: 3.1%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 1800px) and (max-width: 1850px)  {
+
+    .fundoItens {
+        background: transparent;
+        margin-left: 2.5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1750px)  {
+
+    .fundoItens {
+        background: transparent;
+        margin-left: 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 1450px) and (max-width: 1600PX)  {
+
+    .fundoItens {
+        background: transparent;
+        margin-left: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1440PX)  {
+
+    .fundoItens {
+        background: transparent;
+        margin-left: 2%;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;

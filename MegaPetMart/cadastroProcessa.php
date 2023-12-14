@@ -17,6 +17,9 @@ if (isset($_POST)  && !empty($_POST)) {
     $stmt = $conn->prepare("INSERT INTO usuarios (pNome, sNome, usuario, email, senha, cidade, estado, cep, cpf, nCartao, tipo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("sssssssssss", $pNome, $sNome, $usuario, $email, $senha, $cidade, $estado, $cep, $cpf, $nCartao, $tipo);
 
+    if ($_POST["usuario"] == $usuario) {
+        header("location:cadastro.php?msgErro=Usuario já cadastrado!");
+    }
     if ($stmt->execute()) {
         header("location:cadastro.php?msgSucesso=Cadastro realizado com sucesso!");
     } else {

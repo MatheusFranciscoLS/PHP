@@ -122,8 +122,6 @@
     <a class="textologin" href="cadastro.php">Não possui uma conta? Cadastre-se</a>
     </div>
   </form>
-
-
   <!-- inicio do footer  -->
   <div class="footer">
     <div class="ladoEsqFooter">

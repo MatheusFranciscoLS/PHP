@@ -110,7 +110,7 @@
         <div class="input2">
             <textarea name="" id="" cols="5" rows="5" placeholder="Digite sua mensagem aqui"></textarea>
 
-            <button id="btnLogin" class="btn btn-primary" type="submit"> Enviar </button>
+            <button id="btnLogin" class="btn btn-success" type="submit" onclick="Enviar()"> Enviar </button>
         </div>
     </div>
     <br><br>

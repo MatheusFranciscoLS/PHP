@@ -94,7 +94,7 @@
                         <span class="input-group-text" id="arroba">@</span>
                     </div>
                     <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuário"
-                        aria-describedby="inputGroupPrepend3" pattern="[A-Za-z]+" required>
+                        aria-describedby="inputGroupPrepend3" pattern="[A-Za-z0-9]+" required>
                     <div class="valid-feedback">
                         Tudo certo!
                     </div>
