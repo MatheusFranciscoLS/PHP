@@ -1,1 +1,0 @@
-# Aprendizagem SENAI - Linguagem PHP
