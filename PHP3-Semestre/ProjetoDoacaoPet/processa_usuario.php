@@ -9,10 +9,11 @@ if (!empty($_POST)) {
     try {
         // Preparar as informações
         // Montar a SQL (pgsql)
-        $sql = "INSERT INTO usuarios
-        (nome, data_nascimento, telefone, email, senha)
-        VALUES (:nome, :dataNascimento, :telefone, :email, :senha)";
-        // Preparar a SQL (pdo)
+        $sql = "INSERT INTO usuario
+
+(nome, data_nascimento, telefone, email, senha)
+VALUES
+(:nome, :dataNascimento, :telefone, :email, :senha)"; // Preparar a SQL (pdo)
         $stmt = $pdo->prepare($sql);
         // Definir/organizar os dados p/ SQL
         $dados = array(
